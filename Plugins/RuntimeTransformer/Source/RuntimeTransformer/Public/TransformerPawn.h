@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
+#include "GameFramework/DefaultPawn.h"
 #include "RuntimeTransformer.h"
 #include "TransformerPawn.generated.h"
 
@@ -16,7 +16,7 @@ enum class EGizmoPlacement : uint8
 };
 
 UCLASS()
-class RUNTIMETRANSFORMER_API ATransformerPawn : public APawn
+class RUNTIMETRANSFORMER_API ATransformerPawn : public ADefaultPawn
 {
 	GENERATED_BODY()
 
