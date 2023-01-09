@@ -232,6 +232,9 @@ public:
 	FTransform UpdateTransform(const FVector& LookingVector
 		, const FVector& RayOrigin, const FVector& RayDirection);
 
+	UFUNCTION(BlueprintNativeEvent)
+	void UpdateTransformUI();
+
 	UFUNCTION(BlueprintCallable, Category = "Runtime Transformer")
 	void ApplyDeltaTransform(const FTransform& DeltaTransform);
 

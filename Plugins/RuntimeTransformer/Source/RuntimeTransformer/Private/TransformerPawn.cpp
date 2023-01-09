@@ -387,8 +387,15 @@ FTransform ATransformerPawn::UpdateTransform(const FVector& LookingVector
 				, calcDeltaTransform, CurrentDomain, *snappingValue);
 				//GetSnapped Transform Modifies Accumulated Delta Transform by how much Snapping Occurred
 	
+	UpdateTransformUI();
+
 	ApplyDeltaTransform(deltaTransform);
 	return deltaTransform;
+}
+
+void ATransformerPawn::UpdateTransformUI_Implementation()
+{
+
 }
 
 void ATransformerPawn::ApplyDeltaTransform(const FTransform& DeltaTransform)
