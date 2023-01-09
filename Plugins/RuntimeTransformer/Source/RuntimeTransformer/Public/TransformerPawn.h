@@ -48,7 +48,6 @@ private:
 	void FilterHits(TArray<FHitResult>& outHits);
 
 public:
-
 	/*
 	* This gets called everytime a Component / Actor is going to get added.
 	* The default return is TRUE, but it can be overriden to check for additional things 
