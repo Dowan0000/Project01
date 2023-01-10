@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/DefaultPawn.h"
+#include "GameFramework/Pawn.h"
 #include "RuntimeTransformer.h"
 #include "TransformerPawn.generated.h"
 
@@ -16,7 +16,7 @@ enum class EGizmoPlacement : uint8
 };
 
 UCLASS()
-class RUNTIMETRANSFORMER_API ATransformerPawn : public ADefaultPawn
+class RUNTIMETRANSFORMER_API ATransformerPawn : public APawn
 {
 	GENERATED_BODY()
 
@@ -451,6 +451,9 @@ private:
 	*/
 	void SetGizmo();
 
+	/*UFUNCTION(BlueprintCallable)
+	void SetGizmoOnList(USceneComponent* SceneComp);*/
+
 	/**
 	 * Updates the Gizmo Placement (Position)
 	 * Called when an object was selected, deselected
@@ -877,4 +880,5 @@ private:
 
 	//Whether we need to Sync with Server if there is a mismatch in number of Selections.
 	bool bResyncSelection;
+
 };

@@ -932,6 +932,46 @@ void ATransformerPawn::SetGizmo()
 
 }
 
+//void ATransformerPawn::SetGizmoOnList(USceneComponent* SceneComp)
+//{
+//	//If there are selected components, then we see whether we need to create a new gizmo.
+//	if (SceneComp)
+//	{
+//		bool bCreateGizmo = true;
+//		if (Gizmo.IsValid())
+//		{
+//			Gizmo->Destroy();
+//			Gizmo.Reset();
+//		}
+//
+//		if (bCreateGizmo)
+//		{
+//			if (UWorld* world = GetWorld())
+//			{
+//				UClass* GizmoClass = GetGizmoClass(CurrentTransformation);
+//				if (GizmoClass)
+//				{
+//					Gizmo = Cast<ABaseGizmo>(world->SpawnActor(GizmoClass));
+//					Gizmo->OnGizmoStateChange.AddDynamic(this, &ATransformerPawn::OnGizmoStateChanged);
+//				
+//					Gizmo->AttachToComponent(SceneComp,
+//						FAttachmentTransformRules::SnapToTargetIncludingScale);
+//				
+//				}
+//			}
+//		}
+//	}
+//	//Since there are no selected components, we must destroy any gizmos present
+//	else
+//	{
+//		if (Gizmo.IsValid())
+//		{
+//			Gizmo->Destroy();
+//			Gizmo.Reset();
+//		}
+//	}
+//}
+
 void ATransformerPawn::UpdateGizmoPlacement()
 {
 	SetGizmo();
