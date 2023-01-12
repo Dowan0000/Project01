@@ -80,7 +80,6 @@ void ATransformerPawn::SetTransform(USceneComponent* Component, const FTransform
 	}
 	else
 		Component->SetWorldTransform(Transform);
-
 }
 
 void ATransformerPawn::Select(USceneComponent* Component, bool* bImplementsUFocusable)

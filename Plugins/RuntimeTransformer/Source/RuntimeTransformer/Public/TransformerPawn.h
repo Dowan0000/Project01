@@ -880,5 +880,4 @@ private:
 
 	//Whether we need to Sync with Server if there is a mismatch in number of Selections.
 	bool bResyncSelection;
-
 };
