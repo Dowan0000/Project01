@@ -1,0 +1,19 @@
+{
+	"Employees": [
+		{
+			"name": [ "aa", "ㄱㄱ" ],
+			"lastName": [ "Song", "송" ],
+			"gender": [ "Female", "여자" ]
+		},
+		{
+			"name": [ "bb", "ㄴㄴ" ],
+			"lastName": [ "Park", "박" ],
+			"gender": [ "Male", "남자" ]
+		},
+		{
+			"name": [ "cc", "ㄷㄷ" ],
+			"lastName": [ "Kim", "김" ],
+			"gender": [ "Male", "남자" ]
+		}
+	]
+}

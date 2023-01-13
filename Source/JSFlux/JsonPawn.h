@@ -53,7 +53,7 @@ public:
 	void TestFunc_LoadFromJson();
 
 private:
-	FVector ParserJsonAsVector(TSharedPtr<FJsonObject> JsonValueObject, FString KeyName);
+	FVector ParseJsonAsVector(TSharedPtr<FJsonObject> JsonValueObject, FString KeyName);
 
 public:	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "JsonData")
